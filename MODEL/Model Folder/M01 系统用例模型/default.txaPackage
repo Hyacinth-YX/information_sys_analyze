@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="8krugmkakz0eqek37bgk">
+		<property name="$metaclass" value="UseCaseClassifier20"/>
+		<property name="$name" value="财大线上食堂系统"/>
+		<node uin="gj7tthkam4a6axczj1ng">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="创建菜品信息"/>
+			<link uin="ieje0rkam4tw08-6t6eiz">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::gj7tthkam4a6axczj1ng:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48o9py6t66z" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="5sq77kam4ajubtvz3nn">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="编辑和删除菜品信息"/>
+			<link uin="ieje0rkam4uphv-dz94p9">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::5sq77kam4ajubtvz3nn:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48o9py6t66z" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="6gz2dkam4b4la-wn7ctv">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="浏览菜品信息"/>
+			<link uin="ieje0rkam4us10-wo8fli">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::6gz2dkam4b4la-wn7ctv:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48o9py6t66z" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="593dckam4banls0opej">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="查询菜品信息"/>
+			<link uin="ieje0rkam4uvg9othtqu">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::593dckam4banls0opej:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48o9py6t66z" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="at68xkam4bpkx-njla4d">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="组餐"/>
+			<link uin="ieje0rkam4j9g389hfvw">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::at68xkam4bpkx-njla4d:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::6gz2dkam4b4la-wn7ctv:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rkam4k12v-w8bhlj">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::at68xkam4bpkx-njla4d:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::593dckam4banls0opej:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="at68xkam4cq8nm4pb3c">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="查看菜品供应清单"/>
+			<link uin="ieje0rkam4uym0-if5unn">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::at68xkam4cq8nm4pb3c:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48o9py6t66z" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="dqsxqkam4db27jzf37t">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="发布菜品供应清单"/>
+			<link uin="ieje0rkam4kg44-qiwbzl">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::dqsxqkam4db27jzf37t:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::at68xkam4cq8nm4pb3c:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="dqsxqkam4fitq-anr94f">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="编辑菜品供应清单"/>
+			<link uin="ieje0rkam4v1mxsvqjiu">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::dqsxqkam4fitq-anr94f:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48o9py6t66z" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="fpl14kam4fuhv-w2xh6d">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="查看订单统计信息"/>
+			<link uin="ieje0rkam4v56j-jo0gh8">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::fpl14kam4fuhv-w2xh6d:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48o9py6t66z" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="i9v9gkam4m9p8-ozcgcn">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="加入购物车"/>
+			<link uin="ieje0rkam4pr1eqs1cwz">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::i9v9gkam4m9p8-ozcgcn:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::eu7kjkam4nzi2zex6ce:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="axdrgkam4mzwd725lgf">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="查看购物车"/>
+			<link uin="ieje0rkam4tolrtemamt">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::axdrgkam4mzwd725lgf:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48emlxb12k0" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="eu7kjkam4nzi2zex6ce">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="查看首页菜品信息"/>
+			<link uin="ieje0rkam4tknd-87d3f2">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::eu7kjkam4nzi2zex6ce:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48emlxb12k0" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="eu7kjkam4oixp3k29ta">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="生成订单"/>
+			<link uin="ieje0rkam4ptof-i56h8r">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::eu7kjkam4oixp3k29ta:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::axdrgkam4mzwd725lgf:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rkam4qng2-mnzdie">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<property name="supplierNavigability" value="$supplierNavigableExplicitly"/>
+				<participant referencedUin="design:node:::eu7kjkam4oixp3k29ta:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam4939e7rdus4" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="eu7kjkam4pkl6z66cpk">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="编辑购物车"/>
+			<link uin="ieje0rkam4pw5u-73vyki">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::eu7kjkam4pkl6z66cpk:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::axdrgkam4mzwd725lgf:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="eu7kjkam4rmgg-54bgac">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="查看订单信息"/>
+			<link uin="ieje0rkam4trvc4r8qo5">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::eu7kjkam4rmgg-54bgac:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48emlxb12k0" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="24xerkam4scmrbzu1fn">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="评价订单"/>
+			<link uin="ieje0rkam4t5z6-embjd0">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::24xerkam4scmrbzu1fn:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::eu7kjkam4rmgg-54bgac:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="fh4spkam4sqw7-4njwzk">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="取消用户订单"/>
+			<link uin="ieje0rkam4t9pa-y1v141">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::fh4spkam4sqw7-4njwzk:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::eu7kjkam4rmgg-54bgac:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rkam4xu44dnrhih">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<property name="supplierNavigability" value="$supplierNavigableExplicitly"/>
+				<participant referencedUin="design:node:::fh4spkam4sqw7-4njwzk:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam4939e7rdus4" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="24xerkam4udezg6rh8j">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="查看订餐统计信息"/>
+			<link uin="j9ug4kam4udez66jv00">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::24xerkam4udezg6rh8j:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam48emlxb12k0" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="i9v9gkam4yh48-tub35y">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="浏览未配餐订单"/>
+		</node>
+		<node uin="33db0kam4zb12-v9zahu">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="配餐"/>
+			<link uin="ieje0rkam54dwvu3cohh">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::33db0kam4zb12-v9zahu:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::i9v9gkam4yh48-tub35y:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="59n0ekam4zg166tih5f">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="取餐"/>
+		</node>
+		<node uin="59n0ekam4zz86-gzu45">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="取消无法供应订单"/>
+			<link uin="ieje0rkam52ng5d7bcqo">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<property name="supplierNavigability" value="$supplierNavigableExplicitly"/>
+				<participant referencedUin="design:node:::59n0ekam4zz86-gzu45:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam49dqj7hga7t" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rkam52rwa-9enswm">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<property name="supplierNavigability" value="$supplierNavigableExplicitly"/>
+				<participant referencedUin="design:node:::59n0ekam4zz86-gzu45:8krugmkakz0eqek37bgk" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkam4939e7rdus4" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="59n0ekam55jiofzadxi">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="作废过时订单"/>
+		</node>
+		<node uin="3xztbkam5bfzztgdses">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="登录"/>
+		</node>
+	</node>
+	<node uin="8bho0jkam48emlxb12k0">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="订餐者"/>
+		<link uin="ieje0rkam58wmx-w6m6xx">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jkam48emlxb12k0" role="Client"></participant>
+			<participant referencedUin="design:node:::59n0ekam4zg166tih5f:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rkam5dduar6mey1">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jkam48emlxb12k0" role="Client"></participant>
+			<participant referencedUin="design:node:::3xztbkam5bfzztgdses:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="8bho0jkam48o9py6t66z">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="食堂管理员"/>
+		<link uin="ieje0rkam5dkg42panti">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jkam48o9py6t66z" role="Client"></participant>
+			<participant referencedUin="design:node:::3xztbkam5bfzztgdses:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="8bho0jkam48t5ence7uy">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="食堂服务员"/>
+		<link uin="ieje0rkam52itwi0zjhz">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="supplierNavigability" value="$supplierNavigableExplicitly"/>
+			<participant referencedUin="design:node:::8bho0jkam48t5ence7uy" role="Client"></participant>
+			<participant referencedUin="design:node:::59n0ekam4zz86-gzu45:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rkam54iyp-pgwvn6">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jkam48t5ence7uy" role="Client"></participant>
+			<participant referencedUin="design:node:::59n0ekam4zg166tih5f:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rkam54mn2-i2qqih">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jkam48t5ence7uy" role="Client"></participant>
+			<participant referencedUin="design:node:::i9v9gkam4yh48-tub35y:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rkam5dgwz-p4s60l">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jkam48t5ence7uy" role="Client"></participant>
+			<participant referencedUin="design:node:::3xztbkam5bfzztgdses:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="8bho0jkam4939e7rdus4">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="饭卡管理系统"/>
+	</node>
+	<node uin="8bho0jkam49dqj7hga7t">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="短信收发系统"/>
+	</node>
+	<node uin="8bho0jkam49ufunt8qoo">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="时间"/>
+		<link uin="ieje0rkam56d6ddc00an">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jkam49ufunt8qoo" role="Client"></participant>
+			<participant referencedUin="design:node:::59n0ekam55jiofzadxi:8krugmkakz0eqek37bgk" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>
